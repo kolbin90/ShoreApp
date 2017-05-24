@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DSL-wA-lQ8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CLg-xR-TKX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,6 +27,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amo-FP-aSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="657" y="293"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mnG-S0-Ig5">
+            <objects>
+                <navigationController id="CLg-xR-TKX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FJt-fe-8ls">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DSL-wA-lQ8" kind="relationship" relationship="rootViewController" id="R9j-no-ElE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SzO-W8-M0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1204" y="-35"/>
         </scene>
         <!--Map-->
         <scene sceneID="Lxi-Zt-uFr">
@@ -65,6 +81,7 @@
         <scene sceneID="wlU-ND-n0v">
             <objects>
                 <tabBarController id="DSL-wA-lQ8" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T8B-F4-fKj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="jAO-tt-OHM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
