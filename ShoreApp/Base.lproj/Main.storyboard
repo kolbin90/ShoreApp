@@ -31,7 +31,7 @@
         <!--Map-->
         <scene sceneID="Lxi-Zt-uFr">
             <objects>
-                <viewController id="cGP-ko-CzS" sceneMemberID="viewController">
+                <viewController id="cGP-ko-CzS" customClass="MapViewController" customModule="ShoreApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dcb-Fa-hBP"/>
                         <viewControllerLayoutGuide type="bottom" id="6Lh-tp-2kL"/>
@@ -42,6 +42,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hmF-uH-zA5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cGP-ko-CzS" id="TkZ-Sc-EuU"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
